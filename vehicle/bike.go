@@ -1,12 +1,12 @@
 package vehicle
 
 type bike struct{
-	*vehicle
+	*Vehicle
 }
 
 func NewBike(lno string)*bike{
 	return &bike{
-		vehicle: NewVehicle(lno,BIKE),
+		Vehicle: NewVehicle(lno,BIKE),
 	}
 }
 
